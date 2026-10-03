@@ -1,14 +1,11 @@
-# fail rate last year and this year, out of 1,000 students each
-before, after = 50 / 1000, 40 / 1000
+# a £100 jacket: 50% off, then an extra 20% off the new price
+price = 100 * (1 - 0.50) * (1 - 0.20)
+print(f"you pay £{price:.0f}, a total of {1 - price / 100:.0%} off")
 #
-points = (after - before) * 100       # a plain subtraction
-relative = (after - before) / before  # change measured against before
-#
-print(f"absolute: {points:+.1f} percentage points")
+# bowel cancer per 1,000 people, low vs high processed meat
+low, high = 56 / 1000, 66 / 1000
+relative = (high - low) / low         # change compared with the start
+points = (high - low) * 100           # plain subtraction of percentages
 print(f"relative: {relative:+.0%}")
-print(f"students: {50 - 40} fewer fails out of 1,000")
-#
-# the 1995 pill numbers, same arithmetic
-old, new = 1 / 7000, 2 / 7000
-print(f"pill relative: {(new - old) / old:+.0%}")
-print(f"pill absolute: 1 extra case per {1 / (new - old):,.0f}")
+print(f"absolute: {points:+.1f} percentage points")
+print(f"people:   {66 - 56} extra cases per 1,000")

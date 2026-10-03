@@ -33,12 +33,13 @@ python 01_truncated_axis.py
 | `01_truncated_axis.py` | bars that start at 75 | `set_ylim(75, 81)` |
 | `02_baseline_year.py` | a flattering start year | growth printed from every start year |
 | `03_mean_vs_median.py` | mean on lopsided data | mean 38 min, median 20 min |
-| `04_percent_of_percent.py` | relative vs absolute change | -20% and -1 point are the same event |
+| `04_percent_of_percent.py` | percentages of percentages | 50% + 20% off is 60%, and +18% risk is 10 people in 1,000 |
 | `05_survivorship.py` | a survey only stayers saw | 3.9 vs 3.0 out of 5 |
 | `06_simpson.py` | Simpson's paradox | loses overall, wins in each course |
 | `07_correlation_cause.py` | a confounder | r = 0.32 overall, about 0 within groups |
 | `08_deleted_uncertainty.py` | a missing range | +4.6 points, range -2.2 to +11.3 |
 | `09_selective_significance.py` | twenty tests, one winner | the owl mascot, p = 0.0084 |
+| `10_airline_simpson.py` | Simpson's paradox, real data | 1987 airline delays that flip when added up |
 | `audit.py` | the defence | flags truncated bars, flipped axes, missing error bars |
 
 ## Exercises
